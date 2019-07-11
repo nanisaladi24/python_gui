@@ -30,10 +30,10 @@ cb.pack()
 def butCom(event):
     print ("clicked based on event")
 
-#but1= Button(root,text="click here",command=butCom)
+#but1= Button(root,text="click here",command=butCom) #works for any button
 
 but1= Button(root,text="click here")
-but1.bind("<Button-1>",butCom)
+but1.bind("<Button-1>",butCom) #specific to left click
 
 but1.pack()
 
